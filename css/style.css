@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+body{font-family: "Orbitron", sans-serif;}
+
+
+.header{width: 400px; height: 100vh; background: linear-gradient(45deg, aqua, royalblue); padding: 300px 3vw 100px; box-sizing: border-box; color: #fff; display: flex; flex-direction: column; justify-content: space-between; position: fixed; left: 0; top: 0; transition: all 0.5s;}
+.title>p{font-size: 50px; font-weight: 500; line-height: 100%;}
+.line{width: 150px; border: 1px solid #fff; margin: 18px 0;}
+.title::after{content: "UI/UX DEVELOPMENT"; display: block;}
+
+.sns{display: flex;}
+.sns>li{margin-right: 10px;}
+.sns>li>a i{margin-right: 5px;}
+.sns>li>a span{font-size: 13px;}
+
+/*header 미디어 쿼리*/
+@media all and (max-width: 1599px){
+  .header{width: 350px;}
+}
+@media all and (max-width: 1199px){
+  .header{width: 100%; height: 80px; padding: 0 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+  .title>p{font-size: 24px;}
+  .title>p>br{display: none;}
+  .line, .title::after{display: none;}
+  .sns>li{margin: 0 15px;}
+  .sns>li span{display: none;}
+  .sns>li i{font-size: 20px;}
+}
+
+
+
+.main{margin-left: 400px; background-color: #efefef; box-sizing: border-box;  padding: 30px 20px;}
+.btns{display: flex; justify-content: flex-end;}
+.btns>li{margin: 0 10px; padding: 5px 30px; text-align: center; font-size: 12px; background-color: #fff; border-radius: 5px; cursor: pointer; box-shadow: 0 0 10px rgba(0,0,0,0.15);}
+.btns>li.active{background: linear-gradient(45deg, aqua, royalblue); color: #fff; box-shadow: 0 0 20px rgba(0, 225, 255, 0.5);}
+/*li.active와 li .active가 다름 / li.active는 li에 active이고, li .active는 li안에 .active를 의미함*/
+
+.contents{margin-top: 30px; display: flex; flex-wrap: wrap;}
+.box{width: 20%; padding: 12px; box-sizing: border-box;}
+.inner{background-color: #fff; padding: 12px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+.inner>a{display: block;}
+.inner img{width: 100%;}
+.inner p:nth-of-type(1){font-weight: bold; line-height: 30px;}
+.inner p:nth-of-type(2){font-size: 11px;}
+
+/*main 미디어쿼리*/
+@media all and (max-width: 1599px){
+  .main{margin-left: 350px;}
+  .box{width: 25%;}
+}
+@media all and (max-width: 1199px){
+  .header{position: absolute;}
+  .main{margin-left: 0px; padding-top: 100px;}
+  .contents{margin-top: 10px;}
+}
+@media all and (max-width: 900px){
+  .box{width: 33%;}
+}
+@media all and (max-width: 680px){
+  .box{width: 50%;}
+}
+@media all and (max-width: 539px){
+  .box{width: 100%;}
+  .btn>li{width: 30%; text-align: center; margin: 0 5px;}
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/jquery.fancybox.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/isotope.pkgd.min.js"></script>
+  <script src="./js/jquery.fancybox.js"></script>
+  <script src="./js/script.js" defer></script>
+  <link href="./favicon.ico" rel="shortcut icon">
+  <script src="https://kit.fontawesome.com/bf2c83e08d.js" crossorigin="anonymous"></script>
+  <title>갤러리 웹페이지</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="title">
+        <p>DECODE <br> LAB</p>
+        <div class="line"></div>
+      </div>
+
+      <ul class="sns">
+        <li><a href="#"><i class="fa-brands fa-twitter"></i><span>Twitter</span></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-envelope"></i><span>E-mail</span></a></li>
+      </ul>
+    </header><!-- header end-->
+
+
+    <div class="main">
+      <ul class="btns">
+        <li data-filter=".even">EVEN</li><!-- data=는 임의의 이름 -->
+        <li data-filter=".odd">ODD</li>
+        <li class="active" data-filter="*">ALL</li>
+      </ul>
+
+      <div class="contents">
+        <div class="box box1 odd" ><!-- data-filter안 이름과 class이름 안에 일치되는게 있어야 함 -->
+          <div class="inner">
+            <a href="./imgs/p1.jpg" class="fancybox" rel="odd">
+              <img src="./imgs/p1.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box1 end -->
+
+        <div class="box box2 even">
+          <div class="inner">
+            <a href="./imgs/p2.jpg" class="fancybox" rel="even">
+              <img src="./imgs/p2.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box2 end -->
+
+        <div class="box box3 odd">
+          <div class="inner">
+            <a href="./imgs/p3.jpg" class="fancybox" rel="odd">
+              <img src="./imgs/p3.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box3 end -->
+
+        <div class="box box4 even">
+          <div class="inner">
+            <a href="./imgs/p4.jpg" class="fancybox" rel="even">
+              <img src="./imgs/p4.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box4 end -->
+
+        <div class="box box5 odd">
+          <div class="inner">
+            <a href="./imgs/p5.jpg" class="fancybox" rel="odd">
+              <img src="./imgs/p5.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box5 end -->
+
+        <div class="box box6 even">
+          <div class="inner">
+            <a href="./imgs/p6.jpg" class="fancybox" rel="even">
+              <img src="./imgs/p6.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box6 end -->
+
+        <div class="box box7 odd">
+          <div class="inner">
+            <a href="./imgs/p7.jpg" class="fancybox" rel="odd">
+              <img src="./imgs/p7.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box7 end -->
+
+        <div class="box box8 even">
+          <div class="inner">
+            <a href="./imgs/p8.jpg" class="fancybox" rel="even">
+              <img src="./imgs/p8.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box8 end -->
+
+        <div class="box box9 odd">
+          <div class="inner">
+            <a href="./imgs/p9.jpg" class="fancybox" rel="odd">
+              <img src="./imgs/p9.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box9 end -->
+
+        <div class="box box10 even">
+          <div class="inner">
+            <a href="./imgs/p10.jpg" class="fancybox" rel="even">
+              <img src="./imgs/p10.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box10 end -->
+
+        <div class="box box11 odd">
+          <div class="inner">
+            <a href="./imgs/p11.jpg" class="fancybox" rel="odd">
+              <img src="./imgs/p11.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box11 end -->
+
+        <div class="box box12 even">
+          <div class="inner">
+            <a href="./imgs/p12.jpg" class="fancybox" rel="even">
+              <img src="./imgs/p12.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box12 end -->
+
+        <div class="box box13 odd">
+          <div class="inner">
+            <a href="./imgs/p13.jpg" class="fancybox" rel="odd">
+              <img src="./imgs/p13.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box13 end -->
+
+        <div class="box box14 even">
+          <div class="inner">
+            <a href="./imgs/p14.jpg" class="fancybox" rel="even">
+              <img src="./imgs/p14.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box14 end -->
+
+        <div class="box box15 odd">
+          <div class="inner">
+            <a href="./imgs/p15.jpg" class="fancybox" rel="odd">
+              <img src="./imgs/p15.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box15 end -->
+
+        <div class="box box16 even">
+          <div class="inner">
+            <a href="./imgs/p16.jpg" class="fancybox" rel="even">
+              <img src="./imgs/p16.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box16 end -->
+
+        <div class="box box17 odd">
+          <div class="inner">
+            <a href="./imgs/p17.jpg" class="fancybox" rel="odd">
+              <img src="./imgs/p17.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box17 end -->
+
+        <div class="box box18 even">
+          <div class="inner">
+            <a href="./imgs/p18.jpg" class="fancybox" rel="even">
+              <img src="./imgs/p18.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box18 end -->
+
+        <div class="box box19 odd">
+          <div class="inner">
+            <a href="./imgs/p19.jpg" class="fancybox" rel="odd">
+              <img src="./imgs/p19.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box19 end -->
+
+        <div class="box box20 even">
+          <div class="inner">
+            <a href="./imgs/p20.jpg" class="fancybox" rel="even">
+              <img src="./imgs/p20.jpg" alt="x">
+              <p>Here comes title.</p>
+              <p>Here comes content description in detail.</p>
+            </a>
+          </div>
+        </div><!-- box20 end -->
+
+      </div><!-- contents end -->
+    </div><!-- main end -->
+  </div><!-- container end -->
+</body>
+</html>
